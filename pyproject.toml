@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "imges"
+version = "0.1.0"
+description = ""
+authors = ["David Come <david.come@sensefly.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = "^4.49.0"
+torch = "^2.6.0"
+datasets = "^3.3.1"
+pillow = "^11.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "imges.main.py"
