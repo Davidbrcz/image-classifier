@@ -34,7 +34,7 @@ def test(f,  debug=False):
         # if debug:
         #     print(f"{f} has a PET in it [{model.config.id2label[i.item()]}] ;; {i}")
         path = Path(f)
-        if i.item() in index and not f.find("pets"):
+        if i.item() in index:
             # print(f"{f} has a PET in it [{model.config.id2label[i.item()]}]")
             petsDir = os.path.join(path.parent, "pets")
             if not Path(petsDir).exists():
